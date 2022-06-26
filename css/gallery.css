@@ -1,0 +1,127 @@
+/**/
+/* Галерея */
+/* Старт*/
+/* Расположите контейнер изображения (необходимо расположить стрелки влево и вправо) */
+
+
+/* Скрыть изображения по умолчанию */
+.mySlides {
+
+}
+
+.btns-filter-img {
+    display: flex;
+}
+
+.mySlides img {
+    width: 100% !important;
+    height: 100% !important;
+    align-self: center;
+    margin-left: auto;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.51);
+    transition: 0.5s;
+}
+
+.border-short-img {
+    border-radius: 25px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 0 white;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 10px 15px;
+}
+
+.mySlides img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* Добавить указатель при наведении на миниатюры изображений */
+.cursor {
+    cursor: pointer;
+}
+
+/* Вперед и предыдущие кнопки
+.prev,
+.next {
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: floralwhite;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(90, 86, 86, 0.8);
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+*/
+/* Контейнер для текста изображения */
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Шесть колонн бок о бок */
+
+
+/* Добавить эффект прозрачности для миниатюрных изображений */
+.demonstration-img {
+    opacity: 0.6;
+    width: 100px !important;
+    height: 80px !important;
+    float: right !important;
+    margin: 5px;
+    transition: 0.5s;
+
+}
+
+.demonstration-img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.active-gallery,
+.demonstration-img:hover {
+    opacity: 1;
+    border: 1px solid white;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px white ;
+}
+
+@media (max-width: 700px) {
+
+
+
+}
+
+/*Галлерея конец */
+/**/
+/**/

@@ -1,0 +1,645 @@
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+
+
+html {
+    font-family: "Comic Sans MS";
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.mt-90 {
+    margin-top: 70px !important;
+}
+
+.mt-80 {
+    margin-top: 70px !important;
+}
+
+.mt-70 {
+    margin-top: 70px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+
+
+#paralax1 {
+    height: 100vh !important;
+    width: 100%;
+}
+
+#about-me {
+    background-color: white;
+    background-image: url("../img/bg/cake-lg1.jpg");
+    background-repeat: no-repeat;
+}
+
+
+#paralax2 {
+    height: 100vh;
+    width: 100%;
+}
+
+#paralax3 {
+    height: 100vh;
+    width: 100%;
+}
+
+#paralax4 {
+    height: 100vh;
+    width: 100%;
+}
+
+#choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#gallery {
+
+}
+
+.parallax {
+    /* The image used */
+    display: flex;
+    background-image: url("../img/bg/slider-1.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    display: flex;
+    background-image: url("../img/bg/slider-2.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax3 {
+    /* The image used */
+    display: flex;
+    background-image: url("../img/bg/slider-3.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 {
+    /* The image used */
+    display: flex;
+    background-image: url("../img/bg/cd-background-3.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.img-start {
+    display: flex;
+    align-self: center !important;
+    justify-content: center !important;
+    align-content: center !important;
+    box-shadow: 0 0 8px 2px white;
+    border-radius: 50%;
+    margin: 10% auto 0 auto !important;
+}
+
+.title-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.info-p-ptext {
+    font-size: 17px;
+    text-align: justify;
+    width: 100%;
+    min-height: 100%;
+    line-height: 1.5;
+    text-indent: 25px;
+    padding: 10px 10px;
+}
+
+.title-h2 {
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 800;
+    text-indent: 25px;
+    padding: 10px 10px;
+}
+
+
+.info-block {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+
+.author-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.heading {
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: 58px;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 1.5px 1.5px 0px rgb(61, 118, 198);
+}
+
+
+
+.counter-section {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.tekstura-sanimatsue,
+.tekstura-sanimatsue::after {
+    animation-delay: 0;
+    animation-delay: var(--animation-delay, 2s);
+    animation-iteration-count: 1;
+    animation-iteration-count: var(--iterations, 1);
+    animation-duration: 800ms;
+    animation-duration: var(--duration, 800ms);
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.tekstura-sanimatsue {
+    margin-top: 20px;
+    position: relative;
+    font-size: 36px;
+    animation-name: text;
+    color: white;
+    white-space: nowrap;
+    cursor: default;
+    text-shadow: 1.5px 1.5px 0px rgb(61, 118, 198);
+}
+
+
+@media screen and (max-width: 680px) {
+    .tekstura-sanimatsue {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+}
+
+    .tekstura-sanimatsue::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: revealer;
+}
+
+@keyframes text {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes revealer {
+
+    0%, 50% {
+        transform-origin: 0 50%;
+    }
+
+    60%, 100% {
+        transform-origin: 100% 50%;
+    }
+
+
+    60% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+
+.white-text {
+    color: white;
+    text-align: center;
+}
+
+.black-text {
+    color: black;
+    text-align: center;
+}
+
+.about-kt-top {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.82);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cake-title-whitetext {
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.cake-infotext {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.socialIcons {
+    margin-left: auto!important;
+    margin-right: auto!important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.socialIcons a {
+    text-align: center;
+    display: inline-block;
+    font-size: 4rem;
+    height: 100px;
+    width: 100px;
+    line-height: 70px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease;
+    transform-origin: left;
+    transform: rotateY(-10deg);
+    text-shadow: 1.5px 1.5px 0px rgb(61, 118, 198);
+}
+
+.socialIcons a:hover {
+    color: #202020;
+    transform: rotate(-10deg);
+    text-shadow: 0px 0px 1px #131313, 0px 0px 1px #070707, 0px 0px 1px black, 0px 0px 1px black;
+}
+
+
+
+
+.col-lg-4 {
+    border-right: 1px solid #000000;
+    border-left: 1px solid black;
+    margin: 20px 0;
+}
+
+
+.internet-form__input {
+    align-self: center;
+    text-align: center;
+    color: #6c570f !important;
+    border: 1px inset lightslategray;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.users {
+    display: flex !important;
+    flex-direction: column !important;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.user-service {
+    display: flex !important;
+    flex-direction: column !important;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.result {
+    display: flex !important;
+    flex-direction: column !important;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.border-result span {
+    color: black;
+    font-size: 28px;
+    align-self: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    font-weight: 700;
+    text-shadow: 1.5px 1.5px 0px rgb(61, 118, 198);
+}
+
+.users select {
+    border: 3px solid lightslategray;;
+    border-radius: 25px;
+    height: 35px;
+    padding: 0 0 0 10px;
+    align-self: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.user-service select {
+    border: 3px solid lightslategray;;
+    border-radius: 25px;
+    height: 35px;
+    padding: 0 0 0 10px;
+    align-self: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.img-cake {
+
+    align-self: center;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+
+    .col-5 {
+        min-width: 100% !important;
+    }
+
+    .col-7 {
+        min-width: 100% !important;
+    }
+
+    .col-6 {
+        min-width: 100% !important;
+    }
+
+    .col-12 {
+        min-width: 100% !important;
+    }
+
+    .col-md-4 {
+        min-width: 100% !important;
+        border-right: none;
+        border-left: none;
+    }
+
+    .container {
+        min-width: 100% !important;
+    }
+
+
+    .heading {
+        font-size: 36px;
+    }
+
+
+    .img-start {
+        align-self: center;
+        width: 70% !important;
+        margin-top: 200px !important;
+    }
+
+    .text-shadow-st {
+        font-size: 32px !important;
+    }
+
+    .btns-filter {
+        margin-top: 150px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .info-p-ptext {
+        width: 100% !important;
+        text-align: justify !important;
+    }
+
+    .author-img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .btns-filter-img {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .socialIcons a {
+        text-align: center;
+        display: inline-block;
+        font-size: 2rem;
+        height: 50px;
+        width: 50px;
+        line-height: 20px;
+        color: white;
+        text-decoration: none;
+        transition: all .5s ease;
+        transform-origin: left;
+        transform: rotateY(-30deg);
+        text-shadow: 10px 0px 1px #131313, 10px 0px 1px #070707, 10px 0px 1px black, 10px 0px 1px black;
+
+    }
+
+    .tile img:hover {
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+
+    .black-text {
+        font-size: 18px;
+    }
+
+    .info-block {
+        width: 100%;
+    }
+
+
+    .parallax {
+        /* The image used */
+        display: flex;
+        background-image: url("../img/bg/slider-1.jpg");
+
+        /* Set a specific height */
+        height: 100vh;
+        width: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax2 {
+        /* The image used */
+        display: flex;
+        background-image: url("../img/bg/slider-2.jpg");
+
+        /* Set a specific height */
+        height: 100vh;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .parallax3 {
+        /* The image used */
+        display: flex;
+        background-image: url("../img/bg/slider-3.jpg");
+
+        /* Set a specific height */
+        height: 100vh;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax4 {
+        /* The image used */
+        display: flex;
+        background-image: url("../img/bg/cd-background-3.jpg");
+
+        /* Set a specific height */
+        height: 100vh;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+}

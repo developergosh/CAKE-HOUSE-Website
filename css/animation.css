@@ -1,0 +1,307 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow-x: hidden;
+}
+
+select {
+    outline: none;
+}
+
+
+
+/* Навигация */
+
+.header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    transition: all .3s ease;
+    visibility: hidden;
+    z-index: 999;
+}
+.header.out {
+    transform: translateY(-100%);
+}
+
+.header.visible {
+    visibility: visible;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.topnav li {
+    float: left;
+    margin-left: 7% !important;
+}
+
+ul.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav a:hover {
+    background-color: #555;
+    color: yellow;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+.header-h2 {
+    margin-top: 10px !important;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+/*Конутер*/
+article {
+    padding: 50px;
+    color: #3d3d3d;
+    height: 100vh !important;
+}
+
+
+
+.mid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.number {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 0 25px;
+    align-self: center;
+    text-shadow: 1.5px 1.5px 0px rgb(61, 118, 198);
+}
+
+.viz {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.text-count-top {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.text-counter {
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.bl {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 220px;
+    margin: 0 25px;
+    padding: 20px 10px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 5px #404040;
+}
+/*Коунтер конец*/
+
+@media (max-width: 700px) {
+    .container {
+        width: 100% !important;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 16em;}
+    }
+    @keyframes blinkTextCursor{
+        from{border-right-color: rgba(255,255,255,.75);}
+        to{border-right-color: transparent;}
+    }
+
+    ul.topnav li:not(:first-child){display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+
+
+    ul.topnav.responsive {
+        position: relative;
+    }
+
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+.email-bt {
+    background: #0aa80d;
+    border:2px solid #136a03;
+    border-radius:50%;
+    box-shadow:0 8px 10px rgb(57, 253, 0);
+    cursor:pointer;
+    height:68px;
+    text-align:center;
+    width:68px;
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index:999;
+
+    -webkit-animation:email-an linear 1s infinite;
+    animation:email-an linear 1s infinite;
+}
+
+.email-bt .text-call{
+    height:68px;
+    width:68px;
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+}
+
+.email-bt .text-call a {
+    text-align: center;
+    color: #158610;
+    opacity: 0;
+    font-size: 0;
+    position:absolute;
+    right: 4px;
+    top: 22px;
+    line-height: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: opacity .3s linear;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.email-bt .text-call:hover a {
+    opacity: 1;
+    font-size: 11px;
+}
+.email-bt:hover i {
+    display:none;
+}
+
+.email-bt:hover {
+    z-index:1;
+    background:#fff;
+    transition:.3s;
+}
+.email-bt:hover i {
+    color: #9ed2ff;
+    font-size:40px;
+    transition:.3s;
+}
+.email-bt i {
+    color:#fff;
+    font-size:29px;
+    transition:.3s;
+    line-height: 66px;
+}
+
+.email-bt i  {
+    -webkit-animation: opsimple 3s infinite;
+    animation: opsimple 3s infinite;
+}
+
+
+
+
+@-webkit-keyframes email-an {
+    0% {
+        box-shadow:0 8px 10px rgba(24, 249, 35, 0.3),0 0 0 0 rgba(39, 249, 24, 0.8),0 0 0 0 rgba(24, 249, 61, 0.2)
+    }
+    40% {
+        box-shadow:0 8px 10px rgba(24, 249, 46, 0.3),0 0 0 15px rgba(4, 205, 1, 0.72),0 0 0 0 rgba(65, 249, 24, 0.75)
+    }
+    80% {
+        box-shadow:0 8px 10px rgba(73, 249, 24, 0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 26.7px rgba(39, 249, 24, 0.69)
+    }
+    100% {
+        box-shadow:0 8px 10px rgba(58, 249, 24, 0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 40px rgba(249,92,24,0.0)
+    }
+}
+
+@media (max-width: 680px) {
+    .email-bt {
+
+        right: 10%;
+        bottom: 2% !important;
+   
+    }
+
+
+
+}
